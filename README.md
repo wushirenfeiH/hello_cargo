@@ -72,3 +72,5 @@ cargo 脚手架???
 
 - 开发
 - 发布包
+
+## cargo doc --open (会构建当前 crate 文档（同时还有所有 crate 依赖的文档）的 HTML 并在浏览器中打开。)
