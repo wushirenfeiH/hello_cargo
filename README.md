@@ -74,3 +74,11 @@ cargo 脚手架???
 - 发布包
 
 ## cargo doc --open (会构建当前 crate 文档（同时还有所有 crate 依赖的文档）的 HTML 并在浏览器中打开。)
+
+## cargo publish (发布包)
+
+- 创建一个 Api Token
+- cargo login
+- token 必须是选择 publish new 选项
+
+## cargo yank (可以撤销发布的特定版本的 crate)
