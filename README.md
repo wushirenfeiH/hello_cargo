@@ -7,7 +7,7 @@
 
 # 简介
 
-## 为什么要用 Rust？
+# 为什么要用 Rust？
 
 - Rust 是一种令人兴奋的新编程语言，它可以让每个人编写可靠且高效的软件。
 - 它可以用来替换 C/C++，Rust 和它们具有同样的性能，但是很多常见的 bug 在编译时就可以被消灭
@@ -34,8 +34,14 @@
 
 # 安装
 
-cargo 脚手架???
-初始化一个 git 仓库
+## Cargo
+
+- Cargo 是 Rust 的构建系统和包管理工具- 构建代码、下载依赖的库、构建这些库
+- 安装 Rust 的时候会安装 Cargo
+- cargo --version
+
+### Cargo 创建项目
+- cargo new <project_name>
 
 # Cargo.toml - 类似 package.json
 
@@ -49,6 +55,7 @@ cargo 脚手架???
 - name
 - versopm
 - edition
+- ...
 
 ## dependencies --- 项目的依赖 webpack -S ？？？
 
@@ -60,12 +67,12 @@ cargo 脚手架???
 
 - 检查代码, 确保能通过编译，不产生任何可执行文件
 - 执行要比 cargo build 快很多
-- - 编写代码的时候可以连续反复的使用 cargo check 检查代码，提高效率
+  - 编写代码的时候可以连续反复的使用 cargo check 检查代码，提高效率
 
 ## cargo build --release
 
 - 编译时会进行优化
-- - 代码会运行得更快, 但是编译时间更长
+  - 代码会运行得更快, 但是编译时间更长
 - 会在 target/release 而不是 target/debug 生成可执行文件
 
 ## cargo build 跟 cargo build --release 区别
@@ -82,3 +89,5 @@ cargo 脚手架???
 - token 必须是选择 publish new 选项
 
 ## cargo yank (可以撤销发布的特定版本的 crate)
+
+# 编译成WebAssembly模块(wasm文件)
