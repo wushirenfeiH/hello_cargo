@@ -41,7 +41,9 @@
 - cargo --version
 
 ### Cargo 创建项目
-- cargo new <project_name>
+
+- cargo new <project_name> (可执行工程, 生成一个main.rs)
+- cargo new --lib <project_name> (库工程, 生成一个lib.rs)
 
 # Cargo.toml - 类似 package.json
 
@@ -90,4 +92,8 @@
 
 ## cargo yank (可以撤销发布的特定版本的 crate)
 
-# 编译成WebAssembly模块(wasm文件)
+# 编译成 WebAssembly 模块(wasm 文件)
+
+## wasm32-unknown-unknown
+
+## cargo build --release --target wasm32-unknown-unknown (生成命令)

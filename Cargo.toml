@@ -6,6 +6,7 @@ description = "测试发布一个cargo包"
 license = "MIT"
 
 [lib]
+# [bin|lib|rlib|dylib|cdylib|staticlib|proc-macro]
 crate-type = ["cdylib"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
