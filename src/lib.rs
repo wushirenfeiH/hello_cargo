@@ -4,7 +4,9 @@
  * @Author: hkr
  * @LastEditors: hkr
  */
+// no_mangle: 禁用对符号(symbol)名编码，表示在Javascript中依然采用fbin函数名调用本函数。
 #[no_mangle]
+// extern关键字表示该函数可以在Javascript中调用。
 pub extern "C" fn fbin(x: i32) -> i32 {
     if x <= 1 {
         return 1;
